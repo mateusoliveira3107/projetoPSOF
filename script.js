@@ -7,7 +7,24 @@ const inputs = [
 ]
 
 botaoEnviar.addEventListener("click", function() {
+    let temCampoVazio = false;
+
     for (let input of inputs) {
-        input.value = ""
+        if(input.value === "") {
+            temCampoVazio = false;
+            break;
+        } else {
+            temCampoVazio = true;
+            break;
+        };
+    };
+
+    if (temCampoVazio === true) {
+        for (let input of inputs) {
+            input.value = ""
+        };
+        alert("Mensagem Enviada")
+    } else {
+        alert("Preencha todos os campos")
     }
-})
+});
