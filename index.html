@@ -6,57 +6,98 @@
     <title>Mobilidade Industrial</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Mobilidade <span>Industrial</span></h1>
-        <h2>Portal de Transporte e Mobilidade do Trabalhador</h2>
+        <div id="areaTituloEsubtitulo">
+            <figure class="iconeOnibus">
+                <img src="./imagens/icone_onibus.png" alt="Ícone Ônibus" id="iconeOnibus">
+            </figure>
+            <div class="tituloEsubtitulo">
+                <h1 id="tituloMobilidade">Mobilidade <span id="tituloIndustrial">Industrial</span></h1>
+                <h2 id="subtituloHeader">Portal de Transporte e Mobilidade do Trabalhador</h2>
+            </div>
+        </div>
+    </header>
 
-        <nav>
+    <main>
+        <nav class="barraNavegacaoPrincipal">
             <a href="index.html">Início</a>
+            <a href="horarios.html">Horários</a>
             <a href="linhas.html">Linhas e Rotas</a>
             <a href="dicas.html">Dicas de Mobilidade</a>
             <a href="empresas.html">Empresas Parceiras</a>
             <a href="contato.html">Contato</a>
         </nav>
-    </header>
 
-    <main>
-        <section id="secao1">
-            <h2>Seu transporte para o trabalho mais ágil e seguro</h2>
-            <p>Encontre linhas, horários e pontos de embarque para facilitar seu deslocamento até o trabalho.</p>
-        
-            <img src="imagem" alt="imagem">
+        <section id="introducaoPaginaPrincipal">
+            <article class="informacaoPaginaPrincipal">
+                <h2 id="mobilidadeTrabalhadorPaginaPrincipal">Mobilidade para o trabalhador: <span id="maisPraticidadePaginaPrincipal">Mais praticidade, segurança e informação</span></h2>
+                <p class="textoSobrePortal">Consulte itinerários em tempo real, horários de partidas dos ônibus fretados e regulares, além de orientações para o seu deslocamento até o polo industrial.</p>
+
+                <button id="botaoConsultarLinhas"><a href="linhas.html">Consultar Linha</a></button>
+                <button id="botaoVerDicas"><a href="dicas.html">Ver Dicas</a></button>
+            </article>
+
+            <article class="areaSobrePortal">
+                <h3 id="tituloSobrePortal">
+                    <strong>Sobre o Portal</strong>
+                </h3>
+                <p class="textoSobrePortal">Um portal criado para facilitar o acesso dos trabalhadores a informações sobre transporte, rotas e mobilidade até o trabalho</p>
+
+                <hr>
+
+                <figure id="iconesDaPaginaSobrePortal">
+                    <img src="imagens/icone_onibus.png" alt="Ícone Ônibus" class="iconePaginaPrincipal">
+                    <img src="imagens/icone_seguranca.png" alt="Ícone Segurança" class="iconePaginaPrincipal">
+                    <img src="imagens/icone_industria.png" alt="Ícone Indústria" class="iconePaginaPrincipal">
+                </figure>
+            </article>
         </section>
 
-        <section id="secao2">
-            <h2>Como Podemos Ajudar?</h2>
-            <article>
-                <h3>Linhas e Rotas</h3>
-                <p>Consulte itinerários, horários de partida e pontos de embarque.</p>
-                <button><a href="linhas.html">Ver Linhas</a></button>
-            </article>
-            <article>
-                <h3>Dicas de Mobilidade</h3>
-                <p>Orientações de segurança, horários e planejamento de viagem.</p>
-                <button><a href="dicas.html">Ler Dicas</a></button>
-            </article>
-            <article>
-                <h3>Empresas Parceiras</h3>
-                <p>Confira quais empresas fazem parte do nosso plano de mobilidade.</p>
-                <button><a href="empresas.html">Ver Empresas</a></button>
-            </article>
-            <article>
-                <h3>Contato</h3>
-                <p>Entre em contato conosco para resolver dúvidas..</p>
-                <button><a href="contato.html">Fale Conosco</a></button>
-            </article>
+        <section id="introducaoAjudaPaginaPrincipal">
+            <figure id="areaImagemOnibusPaginaPrincipal">
+                <img src="imagens/imagemOnibus.png" alt="Imagem Ônibus">
+            </figure>
 
+            <h2 id="comoPodemosAjudar">Como Podemos Ajudar?</h2>
+            <p id="encontreOquePrecisa">Encontre o que você precisa</p>
+
+            <div>
+                <article>
+                    <h3>Linhas e Rotas</h3>
+                    <p>Consulte itinerários, horários e pontos de embarque.</p>
+                    <button><a href="linhas.html">Ver Linhas</a></button>
+                </article>
+                <article>
+                    <h3>Dicas de Mobilidade</h3>
+                    <p>Orientações de segurança, horários e planejamento de viagem.</p>
+                    <button><a href="dicas.html">Ler Dicas</a></button>
+                </article>
+                <article>
+                    <h3>Empresas Parceiras</h3>
+                    <p>Consulte os horários de passagens no seu ponto.</p>
+                    <button><a href="empresas.html">Ver Empresas</a></button>
+                </article>
+                <article>
+                    <h3>Contato</h3>
+                    <p>Entre em contato conosco para resolver dúvidas.</p>
+                    <button><a href="contato.html">Fale Conosco</a></button>
+                </article>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>2026 Mobilidade Industrial - Todos os direitos reservados.</p>
-        <p>Contato: suporte.mobilidade123@gmail.com</p>
+        <div id="divisaoUmFooter">
+            <p>2026 Mobilidade Industrial</p>
+        </div>
+        <div id="divisaoDoisFooter">
+            <p>Contato: suporte.mobilidade123@gmail.com</p>
+        </div>
     </footer>
 </body>

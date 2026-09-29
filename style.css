@@ -2,9 +2,175 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+main {
+    padding: 40px;
+    margin: 0;
 }
 header {
-    background-color: rgb(18, 59, 93);
+    background-color: rgb(14, 68, 105);
     text-align: center;
+    height: 140px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+#areaTituloEsubtitulo {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.iconeOnibus {
+    width: 80px;
+}
+.tituloEsubtitulo {
+    display: flex;
+    flex-direction: column;
+}
+#iconeOnibus {
+    border-radius: 30px;
+    width: 100%;
+}
+#tituloMobilidade {
+    color: white;
+    font-size: 30px;
+}
+#tituloIndustrial {
+    color: rgb(61, 168, 229);
+}
+#subtituloHeader {
+    color: white;
+}
+#tituloSobrePortal {
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+
+.barraNavegacaoPrincipal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 80, 146);
+    height: 50px;
+    margin: -40px;
+    margin-bottom: 40px;
+}
+.barraNavegacaoPrincipal a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#iconesDaPaginaSobrePortal {
+    padding: 5px;
+    margin: 5px;
+}
+.iconePaginaPrincipal {
+    width: 70px;
+    border-radius: 50px;
+}
+
+
+
+#introducaoPaginaPrincipal {
+    display: flex;
+    background: linear-gradient(#133048, #154166, #1d5685);
+    margin: -40px;
+}
+
+
+#maisPraticidadePaginaPrincipal {
+    color: rgb(29, 184, 255);
+}
+#mobilidadeTrabalhadorPaginaPrincipal {
+    color: white;
+    font-size: 40px;
+}
+
+
+.informacaoPaginaPrincipal {
+    padding: 30px;
+}
+.areaSobrePortal {
+    background-color: rgb(197, 197, 197, 0.1);
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+}
+.textoSobrePortal {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+#botaoConsultarLinhas {
+    background-color: rgb(0, 136, 221);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 30px;
+    width: 200px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#botaoConsultarLinhas a {
+    text-decoration: none;
+    color: white;
+}
+#botaoVerDicas {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    text-decoration: none;
+    width: 150px;
+    background-color: rgb(18, 53, 73);
+}
+#botaoVerDicas a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(18, 59, 93);
+    height: 100px;
+}
+#divisaoUmFooter {
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    border-radius: 60px;
+    background-color: rgb(24, 91, 122);
+    padding: 20px;
+}
+#divisaoDoisFooter {
+    display: flex;
+    align-items: center;
+
+}
+footer p {
+    padding: 30px;
+    color: white;
+    font-size: 22px;
 }
