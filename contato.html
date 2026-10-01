@@ -11,7 +11,7 @@
     <header>
         <div id="areaTituloEsubtitulo">
             <figure class="iconeOnibus">
-                <img src="./imagens/icone_onibus.png" alt="Ícone Ônibus" id="iconeOnibus">
+                <img src="./imagens/iconeOnibus.png" alt="Ícone Ônibus" id="iconeOnibus">
             </figure>
             <div class="tituloEsubtitulo">
                 <h1 id="tituloMobilidade">Mobilidade <span id="tituloIndustrial">Industrial</span></h1>
@@ -30,14 +30,32 @@
             <a href="contato.html">Contato</a>
         </nav>
 
-        <article>
-            <h2>Entre em contato conosco</h2>
-            <input type="text" placeholder="Nome" id="nome"> <br>
-            <input type="email" placeholder="E-mail" id="email" > <br>
-            <input type="Telefone" placeholder="Telefone" id="telefone"> <br>
-            <textarea placeholder="Mensagem" id="mensagem"></textarea> <br>
+        <article id="areaCentralAtendimento">
+            <p id="faleConosco">FALE CONOSCO</p>
+            <h2 id="centralAtendimentoTitulo">CENTRAL DE ATENDIMENTO</h2>   
+            <h3>Entre em contato conosco para tirar dúvidas, relatar problemas de <br>transporte ou enviar sugestões.</h3>
 
-            <button id="botaoEnviar">Enviar</button>
+            <div id="areaInputs">   
+                <p class="textoCentralAtendimento">Seu Nome Completo</p>
+                <input type="text" placeholder="Ex: João Ferreira" id="nome"> <br>
+                <p class="textoCentralAtendimento">E-mail</p>
+                <input type="email" placeholder="Ex: joao123@gmail.com" id="email" > <br>
+                <p class="textoCentralAtendimento">Telefone</p>
+                <input type="Telefone" placeholder="Ex: 19999999999" id="telefone"> <br>
+                <p class="textoCentralAtendimento">Mensagem</p>
+                <textarea placeholder="Ex: Dúvida sobre horários" id="mensagem"></textarea> <br>
+            </div>
+            
+            <button id="botaoEnviar">Enviar Mensagem</button>
+
+            <div id="emailSuporte">
+                <p>E-mail de suporte</p>
+                <strong>suporte.mobilidade123@gmail.com</strong>
+            </div>
+            <div id="telefoneSuporte">
+                <p>Telefone de contato</p>
+                <strong>(55) 19-991231212</strong>
+            </div>
         </article>
     </main>
 
@@ -49,4 +67,6 @@
             <p>Contato: suporte.mobilidade123@gmail.com</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>

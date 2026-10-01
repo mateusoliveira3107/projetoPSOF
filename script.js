@@ -10,21 +10,18 @@ botaoEnviar.addEventListener("click", function() {
     let temCampoVazio = false;
 
     for (let input of inputs) {
-        if(input.value === "") {
-            temCampoVazio = false;
-            break;
-        } else {
+        if (input.value === "") {
             temCampoVazio = true;
             break;
-        };
-    };
+        }
+    }
 
-    if (temCampoVazio === true) {
+    if (temCampoVazio === false) {
         for (let input of inputs) {
             input.value = ""
         };
-        alert("Mensagem Enviada")
+        alert("Mensagem Enviada");
     } else {
-        alert("Preencha todos os campos")
-    }
+        alert("Preencha todos os campos");
+    };
 });
