@@ -6,6 +6,7 @@
     <title>Mobilidade Industrial</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -20,7 +21,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="mainPaginaLinhas">
         <nav class="barraNavegacaoPrincipal">
             <a href="index.html">Início</a>
             <a href="horarios.html">Horários</a>
@@ -30,35 +31,46 @@
             <a href="contato.html">Contato</a>
         </nav>
 
-        <h1>LINHAS E ROTAS</h1>
-        <p>Consulte as linhas disponíveis e encontre informações sobre trajetos e horários</p>
+        <h1 id="tituloLinhasRotas">Linhas e Rotas</h1>
+        <p id="subtituloPaginaLinhasRotas">Consulte as linhas disponíveis e encontre informações sobre trajetos e horários</p>
 
-        <section>
-            <p>Consultar linha</p>
+        <section id="secaoConsultarLinha">
+            <p id="consultarLinha">Consultar linha</p>
+            <p id="pontoEmbarque">Digite um ponto de embarque</p>   
             <input type="text" placeholder="Ex: Linha 01" id="inputConsultarLinha">
-            <button id="botaoBuscarLinha">Buscar</button>
+            <button id="botaoBuscar">Buscar</button>
         </section>
 
-        <section>
-            <article>
+        <section id="areaLinhasRotas">
+            <article id="descricaoRota">
                 <p>Detalhes da Rota</p>
-                <h2>Linha 01 - Distrito Industrial</h2>
+                <h2 id="nomeLinha">Linha 01 - Distrito Industrial</h2>
             </article>
 
-            <article>
-                <div id="trajetoLinha">
-                    <h3>Trajeto</h3>
-                    <p>Terminal Urbano Central -></p>
+            <article id="areaTrajeto">
+                <div id="divisaoTrajeto">
+                    <h3 id="trajetoLinha">Trajeto</h3>
+
+                    <h3 id="pontosDeEmbarque">Pontos de Embarque</h3>
+                    <div id="pontos">
+                        <p>Terminal Urbano Central</p>
+                        <p>Avenida Campinas</p>
+                        <p>Via Prefeito Jurandir Paixão</p>
+                        <p>Distrito Industrial</p>
+                    </div>
                 </div>
 
-                <div id="mapaLinha">
+
+                <div id="divisaoTrajeto2">
                     <img src="imagens/mapa.png" alt="Imagem Mapa" id="imagemMapa">
 
-                    <h3>Pontos importantes no mapa</h3>
-                    <p>1. Terminal Urbano Central</p>
-                    <p>2. Avenida Campinas</p>
-                    <p>3. Via Prefeito Jurandir Paixão</p>
-                    <p>4. Distrito Industrial</p>
+                    <div id="pontosNoMapa">
+                        <h3>Pontos importantes no mapa</h3>
+                        <p><strong>1.</strong> Terminal Urbano Central</p>
+                        <p><strong>2.</strong> Avenida Campinas</p>
+                        <p><strong>3.</strong> Via Prefeito Jurandir Paixão</p>
+                        <p><strong>4.</strong> Distrito Industrial</p>
+                    </div>
                 </div>
             </article>
         </section>
