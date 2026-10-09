@@ -12,7 +12,7 @@ main {
 
 /* Header */
 header {
-    background-color: rgb(14, 68, 105);
+    background-color: rgb(27, 59, 93);
     text-align: center;
     height: 140px;
     display: flex;
@@ -42,6 +42,7 @@ header {
 }
 #subtituloHeader {
     color: white;
+    font-size: 18px;
 }
 /* Nav */
 .barraNavegacaoPrincipal {
@@ -80,7 +81,7 @@ header {
     width: 80%;
     margin-top: -15px;
     border-radius: 25px;
-    border: solid 6px rgb(224, 230, 236);
+    border: solid 6px rgb(35, 68, 116);
 }
 #areaImagemOnibusPaginaPrincipal {
     display: flex;
@@ -93,8 +94,7 @@ header {
 }
 #tituloSobrePortal {
     font-weight: 700;
-    font-size: 26px;
-    margin-top: 10px;
+    font-size: 29px;
 }
 
 #maisPraticidadePaginaPrincipal {
@@ -109,20 +109,26 @@ hr {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#areaIconesPaginaPrincipal {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
 .iconePaginaPrincipal {
-    width: 70px;
-    border-radius: 50px;
+    width: calc(5% + 50px);
+    margin-top: 20px;
+    border-radius: calc(100%);
 }
 #informacaoPaginaPrincipal {
     padding: 50px;
 }
 #areaSobrePortal {
     background-color: rgb(197, 197, 197, 0.1);
-    margin: 30px;
+    margin: 50px;
     padding: 30px;
+    width: 90%;
     border-radius: 15px;
     color: white;
-    height: 335px;
 }
 .textoSobrePortal {
     font-size: 20px;
@@ -146,11 +152,12 @@ hr {
 #comoPodemosAjudar {
     margin-top: 30px;
     text-align: center;
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 800;
 }
 #encontreOquePrecisa {
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -158,13 +165,12 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     background-color: white;
     font-size: 18px;
     margin: 10px;
     width: 30%;
     padding: 0 30px 30px 30px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #areaTiposDeAjudas article a {
@@ -178,7 +184,7 @@ hr {
     font-weight: 600;
     width: 100%;
     height: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     padding: 30px;
     margin-top: 20px;
@@ -189,15 +195,20 @@ hr {
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
 }
 .areaTipoAjuda {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(rgb(19, 79, 147), rgb(26, 102, 188));
     margin: 0 -30px 30px -30px;
-    border-radius: 10px 10px 0 0;
-    text-align: center;
+    border-radius: 20px 20px 0 0;
     width: calc(100% + 60px);
+    height: 70px;
     padding: 15px;
 }
 .areaTipoAjuda h3 {
-    font-size: 19px;
+    font-size: 20px;
+    color: white;
     font-weight: 700;
 }
 
@@ -381,173 +392,258 @@ footer p {
 
 /* Celular */
 @media (max-width: 767px) {
-    .iconeOnibus {
-        width: 30px;
+    main {
+        padding: 15px;
     }
     header {
-        height: 70px;
-        padding: 30px;
+        height: 90px;
+        padding: 15px 20px;
+        margin-bottom: -20px;
     }
-    #tituloMobilidade, #tituloIndustrial, h2 {
-        font-size: 12px;
+    .iconeOnibus {
+        width: 45px;
+    }
+    #tituloMobilidade {
+        font-size: 18px;
     }
     #subtituloHeader {
-        font-size: 9px;
+        font-size: 11px;
     }
     .barraNavegacaoPrincipal {
-        height: 20px;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin: 0 -15px 20px -15px;
+        gap: 10px;
     }
     .barraNavegacaoPrincipal a {
-        font-size: 7px;
+        font-size: 12px;
     }
     #introducaoPaginaPrincipal {
         flex-direction: column;
-        max-height: 900px;
+        margin: -20px -15px 0 -15px;
+        padding: 20px 15px;
     }
-
-    .textoSobrePortal {
-        font-size: 10px;
+    #informacaoPaginaPrincipal {
+        padding: 15px 5px;
     }
-    #mobilidadeTrabalhadorPaginaPrincipal {
-        font-size: 20px;
-    }
-    #maisPraticidadePaginaPrincipal {
-        font-size: 20px;
-    }
-    #botaoConsultarLinhas, #botaoVerDicas {
-        height: 40px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 11px;
-        margin-bottom: 10px;
-    }
-    #areaTiposDeAjudas {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    #comoPodemosAjudar {
+    #mobilidadeTrabalhadorPaginaPrincipal, #maisPraticidadePaginaPrincipal {
         font-size: 22px;
-    }
-    #encontreOquePrecisa {
-        font-size: 16px;
-    }
-   
-    #areaTiposDeAjudas article {
-        width: 400px;
-        text-align: center;
-        min-width: 200px;
-    }
-    #areaTiposDeAjudas article button {
-        width: 90%;
-        text-align: center;
     }
     #botoesConsulta {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        gap: 3px;
+        width: 100%;
+        height: 120px;
+    }
+    #botaoConsultarLinhas, #botaoVerDicas {
+        height: 48px;
+        min-width: 95%;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    #areaImagemOnibusPaginaPrincipal {
+        margin: 30px 0 0 0;
+    }
+    #imagemOnibus {
+        width: 100%;
+    }
+    #areaSobrePortal {
+        margin: 20px 0 0 0;
+        width: 100%;
+        padding: 20px;
+    }
+    #tituloSobrePortal {
+        font-size: 20px;
+    }
+    .textoSobrePortal {
+        font-size: 13px;
+    }
+    #areaComoPodemosAjudar {
+        margin: 0 -15px -15px -15px;
+        padding: 40px 15px;
+    }
+    #comoPodemosAjudar {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    #encontreOquePrecisa {
+        font-size: 15px;
     }
 
+    #tituloEsubtituloAreaAjuda {
+        padding: 0 0 30px 0;
+    }
+    #areaTiposDeAjudas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #areaTiposDeAjudas article {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .areaTipoAjuda {
+        margin: 0 -20px 20px -20px;
+        width: calc(100% + 40px);
+        height: 60px;
+    }
+    .areaTipoAjuda h3 {
+        font-size: 16px;
+    }
+    #areaTiposDeAjudas article a {
+        padding: 20px;
+        font-size: 14px;
+    }
+    #areaCentralAtendimento {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 15px;
+    }
+    #centralAtendimentoTitulo {
+        font-size: 24px;
+        text-align: center;
+    }
+    #areaInputs {
+        margin-top: 25px;
+        width: 100%;
+    }
+    input, textarea, #botaoEnviar, #emailSuporte, #telefoneSuporte {
+        width: 100%;
+    }
+    #botaoEnviar {
+        margin: 20px 0;
+    }
+    #emailSuporte, #telefoneSuporte {
+        padding-bottom: 15px;
+    }
+
+
     footer {
-        height: 70px;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 10px;
+    }
+    #divisaoUmFooter {
+        margin-left: 0;
+        border-radius: 15px;
+        justify-content: center;
+        padding: 10px;
+    }
+    #divisaoDoisFooter {
+        justify-content: center;
     }
     footer p {
-        font-size: 12px;
+        padding: 5px;
+        font-size: 13px;
     }
 }
 
 /* Tablet */
 @media (max-width: 1023px) and (min-width: 767px) {
-    .iconeOnibus {
-        width: 50px;
+    main {
+        padding: 30px;
     }
     header {
         height: 100px;
-        padding: 30px;
+        margin-bottom: -30px;
     }
-    #tituloMobilidade, #tituloIndustrial, h2 {
-        font-size: 22px;
+    .iconeOnibus {
+        width: 60px;
+    }
+    #tituloMobilidade {
+        font-size: 24px;
     }
     #subtituloHeader {
-        font-size: 14px;
+        font-size: 13px;
     }
     .barraNavegacaoPrincipal {
-        height: 32px;
+        height: 45px;
+        margin: 0 -30px 30px -30px;
+        padding: 0 20px;
     }
     .barraNavegacaoPrincipal a {
-        font-size: 12px;
+        font-size: 14px;
     }
+
+
+
     #introducaoPaginaPrincipal {
         flex-direction: column;
-        max-height: 600px;
+        max-height: none;
+        margin: -30px -30px 0 -30px;
+        padding: 30px;
     }
-
-    .textoSobrePortal {
-        font-size: 14px;
-    }
-    #mobilidadeTrabalhadorPaginaPrincipal {
-        font-size: 26px;
-    }
-    #maisPraticidadePaginaPrincipal {
-        font-size: 26px;
+    #mobilidadeTrabalhadorPaginaPrincipal, #maisPraticidadePaginaPrincipal {
+        font-size: 28px;
     }
     #botoesConsulta {
-        height: 100px;
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        flex-direction: column;
+        margin-top: 25px;
     }
     #botaoConsultarLinhas, #botaoVerDicas {
-        width: 80%;
+        width: 48%;
         height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-top: 0;
         font-size: 14px;
-        margin: 0;
     }
-    .areaSobrePortal {
-        margin: 50px;
-        margin-top: -20px;
-    }
-    #areaTiposDeAjudas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-   
-    #areaTiposDeAjudas article {
-        text-align: center;
-        height: 250px;
-    }
-    #areaTiposDeAjudas article button {
+    #imagemOnibus {
         width: 90%;
-        text-align: center;
+    }
+    #areaSobrePortal {
+        margin: 30px 0 0 0;
+        width: 100%;
+        padding: 20px;
+    }
+    #areaComoPodemosAjudar {
+        margin: 0 -30px -30px -30px;
+        padding: 50px 30px;
     }
     #comoPodemosAjudar {
-        font-size: 30px;
-    }
-    
-
-    footer {
-        height: 70px;
-    }
-    footer p {
-        font-size: 12px;
+        font-size: 28px;
     }
     #areaTiposDeAjudas {
         display: flex;
-        text-align: center;
         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px 0;
     }
     #areaTiposDeAjudas article {
-        min-width: 47%;
+        width: 48%;
+        min-width: 48%;
+        margin: 0;
+        height: auto;
+    }
+
+
+    #areaCentralAtendimento {
+        width: 100%;
+        margin-left: 0;
+    }
+    input, textarea, #botaoEnviar, #emailSuporte, #telefoneSuporte {
+        width: 100%;
+        max-width: 600px;
+    }
+    #botaoEnviar {
+        margin: 20px 0;
+    }
+
+
+    footer {
+        height: 80px;
+        padding: 0 20px;
+    }
+    #divisaoUmFooter {
+        margin-left: -20px;
+        padding: 15px 25px;
+    }
+    footer p {
+        font-size: 15px;
+        padding: 10px;
     }
 }
