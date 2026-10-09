@@ -20,7 +20,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="mainPaginaHorario">
         <nav class="barraNavegacaoPrincipal">
             <a href="index.html">Início</a>
             <a href="horarios.html">Horários</a>
@@ -30,49 +30,52 @@
             <a href="contato.html">Contato</a>
         </nav>
 
-        <h2 id="tituloPaginaHorarios">Consulte os Horários</h2>
-        <p id="subtituloPginaHorarios">Digite um ponto de embarque para consultar as próximas passagens.</p>
+        <section id="areaPrincipalPaginaHorarios">
+            <h2 id="tituloPaginaHorarios">Consulte os Horários</h2>
+            <p id="subtituloPaginaHorarios">Digite um ponto de embarque para consultar as próximas passagens.</p>
 
-        <article id="areaConsultaDeHorarios">
-            <div id="areaPesquisarHorario">
-                <h3 id="consultarHorario">Consultar Horário</h3>
-                <p id="pontoEmbarque">Digite um ponto de embarque</p>
-                <input type="text" placeholder="Ex: Avenida Campinas">
-            </div>
-        </article>
-
-        <article id="areaHorariosNoPonto">
-            <h2>Horários no ponto</h2>
-            <p>Ponto: Avenida Campinas</p>
-
-            <div id="exemploLinha1">
-                <p class="tituloExemploLinha">Linha 01 - Distrito Industrial</p>
-
-                <p id="proximasPassagens">Próximas passagens</p>
-                <div id="areaHorarios">
-                    <p>06:00</p>
-                    <p>06:30</p>
-                    <p>07:00</p>
-                    <p>07:30</p>
-                    <p>08:00</p>
-                    <p>08:30</p>
+            <article id="areaConsultaDeHorarios">
+                <div id="areaPesquisarHorario">
+                    <h3 id="consultarHorario">Consultar Horário</h3>
+                    <p id="pontoEmbarque">Digite um ponto de embarque</p>
+                    <input type="text" placeholder="Ex: Avenida Campinas" id="inputConsultaHorario">
                 </div>
-            </div>
+            </article>
 
-            <div id="exemploLinha2">
-                <p class="tituloExemploLinha">Linha 02 - Centro Urbano</p>
+            <article id="areaHorariosNoPonto">
+                <h2>Horários no ponto</h2>
+                <p>Ponto: Avenida Campinas</p>
 
-                <p id="proximasPassagens">Próximas passagens</p>
-                <div id="areaHorarios">
-                    <p>06:00</p>
-                    <p>06:30</p>
-                    <p>07:00</p>
-                    <p>07:30</p>
-                    <p>08:00</p>
-                    <p>08:30</p>
+                <div id="exemploLinha1">
+                    <p class="tituloExemploLinha">Linha 01 - Distrito Industrial</p>
+
+                    <p id="proximasPassagens">Próximas passagens</p>
+                    <div id="areaHorarios">
+                        <p>06:00</p>
+                        <p>06:30</p>
+                        <p>07:00</p>
+                        <p>07:30</p>
+                        <p>08:00</p>
+                        <p>08:30</p>
+                    </div>
                 </div>
-            </div>
-        </article>
+
+                <div id="exemploLinha2">
+                    <p class="tituloExemploLinha">Linha 02 - Centro Urbano</p>
+
+                    <p id="proximasPassagens">Próximas passagens</p>
+                    <div id="areaHorarios">
+                        <p>06:00</p>
+                        <p>06:30</p>
+                        <p>07:00</p>
+                        <p>07:30</p>
+                        <p>08:00</p>
+                        <p>08:30</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
     </main>
 
     <footer>
