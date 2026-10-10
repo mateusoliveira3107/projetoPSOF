@@ -26,3 +26,17 @@ botaoEnviar.addEventListener("click", function() {
         alert("Preencha todos os campos");
     };
 });
+
+/* Dicas */
+const botaoVerMais = document.getElementById('botaoVerMais'); 
+const dicasExtras = document.getElementById('dicasExtras'); 
+
+botaoVerMais.addEventListener("click", function() { 
+    if (dicasExtras.style.display === "grid") { 
+        dicasExtras.style.display = "none"; 
+        botaoVerMais.textContent = "Ver mais";
+    } else { 
+        dicasExtras.style.display = "grid"; 
+        botaoVerMais.textContent = "Ver menos";
+    }
+});
