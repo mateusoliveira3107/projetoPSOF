@@ -1,3 +1,4 @@
+/* Contato */
 const botaoEnviar = document.getElementById('botaoEnviar');
 const inputs = [
     document.getElementById('nome'),
