@@ -21,7 +21,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="mainPaginaEmpresas">
         <nav class="barraNavegacaoPrincipal">
             <a href="index.html">Início</a>
             <a href="horarios.html">Horários</a>
@@ -40,32 +40,38 @@
             <article>
                 <ul id="listaEmpresas">
                     <li id="empresa1">
-                        <img src="zaccaria" alt="imagem zaccaria">
+                        <h3>Zaccaria</h3>
                         <p>Fabricante de máquinas e equipamentos industriais</p>
 
                         <p class="nomeCidade">Limeira - SP</p>
 
-                        <button class="botaoSaibaMais">Saiba mais</button>
+                        <button class="botaoSaibaMais" id="botaoEmpresa1">Sobre</button>
                     </li>
                     <li id="empresa2">
-                        <img src="unipac" alt="imagem unipac">
-                        <p>Fabricante de máquinas e equipamentos industriais</p>
+                        <h3>Unipac</h3>
+                        <p>Empresa de componentes e produtos industriais</p>
 
                         <p class="nomeCidade">Limeira - SP</p>
 
-                        <button class="botaoSaibaMais">Saiba mais</button>
+                        <button class="botaoSaibaMais" id="botaoEmpresa2">Sobre</button>
                     </li>
                     <li id="empresa3">
-                        <img src="forvia" alt="imagem forvia">
-                        <p>Fabricante de máquinas e equipamentos industriais</p>
+                        <h3>Forvia</h3>
+                        <p>Fabricante de peças e componentes para veículos automotores</p>
 
                         <p class="nomeCidade">Limeira - SP</p>
 
-                        <button class="botaoSaibaMais">Saiba mais</button>
+                        <button class="botaoSaibaMais" id="botaoEmpresa3">Sobre</button>
                     </li>
                 </ul>
+            </article>
 
-                <div id="explicacaoSobreEmpresa"></div>
+            <article id="explicacaoSobreEmpresa">
+                <div id="nomeEmpresa"></div>
+
+                <div id="conteudoEmpresa">
+                    <!-- Essa parte é a que será preenchida através de JavaScript quando a pessoa clicar no botão sobre -->
+                </div>
             </article>
         </section>
     </main>
@@ -77,4 +83,6 @@
             <p>Contato: suporte.mobilidade123@gmail.com</p>
         </div>
     </footer>
+
+    <script src="scriptEmpresas.js"></script>
 </body>
