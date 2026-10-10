@@ -284,25 +284,27 @@ hr {
     font-weight: 800;
 }
 #subtituloPaginaHorarios {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 #areaConsultaDeHorarios {
     background-color: white;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
-    padding: 50px;
+    padding: 60px 40px 40px 40px;
     margin: 30px 0 30px 0;
     border-radius: 10px;
 }
 #consultarHorario {
     font-size: 28px;
-    margin: -20px 0 25px 0;
+    margin: -20px 0 20px 0;
 }
 #pontoEmbarque {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 100;
 }
 #inputConsultaHorario {
-    margin: 10px 0 0 0;
+    margin: 10px 20px 0 0;
+    width: 45%;
 }
 #areaHorariosNoPonto h2 {
     margin: -10px 0 0 0;
@@ -317,60 +319,90 @@ hr {
 }
 #areaHorariosNoPonto {
     background-color: #0b5694;
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.2);
 }
 #areaHorariosPonto {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
 }
 #areaHorariosPonto {
     background-color: white;
-    margin: 0 -40px -40px -40px;
+    margin: 0 -50px -50px -50px;
     border-radius: 10px;
     padding: 20px;
 }
 
 #botaoBuscar {
-    padding: 20px 50px;
+    padding: 18px 70px;
     border-radius: 10px;
     border: none;
     background-color: rgb(2, 126, 202);
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     color: white;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 700;
     cursor: pointer;
 }
 #botaoBuscar:hover {
     background-color: rgb(20, 114, 173);
-    box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
+    box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 
 #exemploLinha1, #exemploLinha2 {
+    display: flex;
+    flex-direction: column;
     max-height: 500%;
     width: 48%;
     padding: 20px;
     background-color: rgb(238, 242, 245);
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.2);
+}
+.todosHorarios {
+    background-color: white;
+    display: grid;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }
 .tituloExemploLinha {
     font-weight: 800;
+    text-align: center;
     font-size: 22px;
 }
-#proximasPassagens {
-    margin: 40px 0 0 0;
+.proximasPassagens {
+    margin: 20px 0 -30px 0;
     font-size: 20px;
+    text-align: center;
     font-weight: 600;
 }
 #areaHorarios {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
+}
+#horariosExtras1, #horariosExtras2 {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+#horariosExtras1 p, #horariosExtras2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(205, 212, 223);
+    border-radius: 10px;
+    padding: 15px 40px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
 }
 #areaHorarios p {
     display: flex;
@@ -378,15 +410,13 @@ hr {
     align-items: center;
     margin: 10px;
     background-color: rgb(205, 212, 223);
-    width: 10%;
     border-radius: 10px;
     padding: 15px 40px;
-    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
 }
 
 #botaoVerTodos1, #botaoVerTodos2 {
-    margin: 10px;
-    width: 94%;
+    margin: 0 25px;
     border-radius: 10px;
     border: none;
     background-color: rgb(2, 126, 202);
@@ -394,6 +424,7 @@ hr {
     font-size: 16px;
     padding: 15px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 #botaoVerTodos1:hover, #botaoVerTodos2:hover {
     background-color: rgb(20, 114, 173);
@@ -411,30 +442,31 @@ hr {
     font-weight: 800;
 }
 #subtituloPaginaLinhasRotas {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
 }
 #secaoConsultarLinha {
     background-color: white;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
-    padding: 50px;
+    padding: 40px;
     border-radius: 10px;
     margin: 30px 0 20px 0;
 }
 #consultarLinha {
     font-size: 28px;
-    margin: -20px 0 25px 0;
     font-weight: 600;
+    margin-bottom: 20px;
 }
 #inputConsultarLinha {      
-    margin: 10px 0 0 0;
+    margin: 10px 20px 0 0;
+    width: 45%;
 }
 #descricaoRota {
     color: white;
     padding: 0 0 30px 0;
 }
 #descricaoRota p {
-    font-size: 22px;
+    font-size: 20px;
 }
 #nomeLinha {
     font-size: 30px;
@@ -541,6 +573,7 @@ hr {
     color: rgb(11, 87, 160);
     font-size: 14px;
     font-weight: 800;
+    letter-spacing: 1px;
 }
 #tituloDicas {
     font-size: 36px;
@@ -564,21 +597,23 @@ hr {
 }
 #areaDicas article h3 {
     color: rgb(11, 87, 160);
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
     font-weight: 700;
     margin: 0 0 15px 0;
 }
 #areaDicas article p{
-    font-size: 17px;
+    font-size: 20px;
+    line-height: 25px;
 }
 #botaoVerMais {
-    padding: 15px 60px;
+    padding: 18px 70px;
     border: none;
     border-radius: 10px;
     margin: 30px 0;
     background-color: rgb(2, 126, 202);
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     cursor: pointer;
@@ -598,6 +633,38 @@ hr {
 #areaBotaoVerMais {
     display: flex;
     justify-content: center;
+}
+
+#areaSugestao {
+    background-color: #02345d;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#areaSugestao b {
+    color: white;
+    font-size: 24px;
+}
+#areaSugestao p {
+    color: white;
+    font-size: 18px;
+    margin: 5px 0;
+}
+#botaoSugestao {
+    background-color: rgb(8, 104, 163);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+#botaoSugestao:hover {
+    background-color: rgb(18, 122, 187);
+    box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
 }
 
 
@@ -645,8 +712,8 @@ hr {
     background-color: rgb(227, 234, 240);
     flex-direction: column;
     align-items: center;
-    padding: 40px;
-    max-width: 1200px;
+    padding: 50px;
+    max-width: 1150px;
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -659,8 +726,9 @@ hr {
 }
 #areaCentralAtendimento h3 {
     font-weight: 100;
+    font-size: 20px;
+    text-align: center;
     max-width: 560px;
-    margin-bottom: -30px;
 }
 #textoCentralAtendimento {
     font-size: 22px;
@@ -713,17 +781,17 @@ input, textarea {
 }
 #contatoSuporte {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(48.5%, 1fr));
     gap: 25px;
     width: 100%;
+    justify-content: center;
 }
 #mensagem {
     height: 200px;
 }
 #emailSuporte, #telefoneSuporte {    
     border: solid, 1px;
-    width: 500px;
-    height: 150px;
+    height: 130px;
     background-color: white;
     border-radius: 15px;
     text-align: center;
@@ -734,14 +802,14 @@ input, textarea {
     font-size: 20px;
     padding: 10px;
     height: 40px;
+    margin-bottom: 20px;
     color: white;
-    margin: 0;
     border-radius: 8px 8px 0px 0px;
     background-color: #0d5fa3;
 }
 #emailSuporte strong, #telefoneSuporte strong {
     font-size: 21px;
-    font-weight: 1000;
+    font-weight: 800;
     color: rgb(26, 87, 128);
     text-decoration: underline;
 }
