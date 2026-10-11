@@ -293,6 +293,7 @@ hr {
     padding: 60px 40px 40px 40px;
     margin: 30px 0 30px 0;
     border-radius: 10px;
+    border-left: solid 6px rgb(16, 63, 110);
 }
 #consultarHorario {
     font-size: 28px;
@@ -319,9 +320,10 @@ hr {
 }
 #areaHorariosNoPonto {
     margin-top: 40px;
-    background-color: #0b5694;
+    background: linear-gradient(to right, #003f72, #024c89, #015fac);
     border-radius: 10px;
     box-shadow: 4px 6px 5px rgb(0, 0, 0, 0.2);
+    border: solid 3px #003f72;
 }
 #areaHorariosPonto {
     display: grid;
@@ -367,12 +369,14 @@ hr {
     font-weight: 800;
     text-align: center;
     font-size: 22px;
+    color: #031f38;
 }
 .proximasPassagens {
     margin: 20px 0 -30px 0;
     font-size: 20px;
     text-align: center;
     font-weight: 600;
+    color: #052846;
 }
 .areaHorarios {
     display: grid;
@@ -457,6 +461,7 @@ hr {
     padding: 40px;
     border-radius: 10px;
     margin: 30px 0 20px 0;
+    border-left: solid 6px rgb(16, 63, 110);
 }
 #consultarLinha {
     font-size: 28px;
@@ -479,7 +484,7 @@ hr {
     margin-top: 10px;
 }
 #areaLinhasRotas {
-    background-color: #0b5694;
+    background: linear-gradient(to right, #003f72, #024c89, #015fac);
     padding: 40px;
     border-radius: 10px;
     margin: 30px 0 0 0;
@@ -738,15 +743,28 @@ hr {
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.3);
 }
 #explicacaoSobreEmpresa {
-    display: flex;
-    align-items: center;
+    display: none;
+    align-items: center;    
     gap: 40px;
     background-color: white;
     margin: 10px 30px;
     padding: 25px 30px;
-    border-left: 5px solid rgb(20, 114, 173);
+    border-left: 4px solid rgb(20, 114, 173);
     box-shadow: 3px 4px 7px rgb(0, 0, 0, 0.15);
     border-radius: 15px;
+}
+#botaoFecharResumo {
+    padding: 13px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(23, 104, 155);
+    cursor: pointer;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+}
+#botaoFecharResumo:hover {
+    background-color: #0a4a7d;
+    box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
 }
 
 #nomeEmpresa {
