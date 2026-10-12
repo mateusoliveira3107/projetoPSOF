@@ -1,3 +1,18 @@
+const areaHorarios = document.getElementById('areaHorariosNoPonto');
+const pontoEscrito = document.getElementById('inputConsultaHorario');
+const botaoBuscarHorarios = document.getElementById('botaoBuscarHorarios');
+const nomePonto = document.getElementById('nomePonto');
+
+botaoBuscarHorarios.addEventListener("click", function() {
+    if (pontoEscrito.value === "") {
+        alert("Insira um ponto de embarque");
+        return;
+    };
+
+    areaHorarios.style.display = "block";
+    nomePonto.textContent = `Ponto: ${pontoEscrito.value}`
+})
+
 const botaoVerTodos1 = document.getElementById('botaoVerTodos1');
 const horariosExtras1 = document.getElementById('horariosExtras1');
 const botaoVerTodos2 = document.getElementById('botaoVerTodos2');

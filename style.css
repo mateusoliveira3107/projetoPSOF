@@ -317,6 +317,7 @@ hr {
     color: white;
 }
 #areaHorariosNoPonto {
+    display: none;
     margin-top: 40px;
     background: linear-gradient(to right, #003f72, #024c89, #015fac);
     border-radius: 10px;
@@ -486,6 +487,7 @@ hr {
     margin-top: 10px;
 }
 #areaLinhasRotas {
+    display: none;
     background: linear-gradient(to right, #003f72, #024c89, #015fac);
     padding: 40px;
     border-radius: 10px;
@@ -522,7 +524,6 @@ hr {
 #trajetoLinha, #pontosDeEmbarque {
     font-size: 26px;
     font-weight: 700;
-    color: #052846;
 }
 #resumoTrajeto {
     display: flex;
@@ -569,23 +570,21 @@ hr {
     border-radius: 12px;
 }
 #pontosNoMapa {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 30px 0 0 0;
+    align-items: center;
 }
 #pontosNoMapa h3 {
     font-size: 24px;
-    margin: 0 0 20px 0;
+    margin: -20px 0 30px 0;
     font-weight: 700;
-    color: #052846;
 }
 #pontosNoMapa ol li {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 18px;
-    list-style: none;
+    margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -742,19 +741,21 @@ hr {
     box-shadow: 0px 5px 6px rgb(0, 0, 0, 0.3);
 }
 #listaEmpresas p {
-    margin: 10px 0;
+    margin: 10px 0 0 0;
+    height: 50px;
 }
 .nomeCidade {
     font-weight: 700;
     font-size: 17px;
     color: rgb(9, 49, 110);
-    padding-top: 40px;
+    padding-top: 15px;
 }
 #listaEmpresas .botaoSaibaMais {
     padding: 15px 60px;
     border-radius: 10px;
     width: 100%;
-    border: 0;
+    border: none;
+    margin: 0;
     font-weight: 700;
     font-size: 14px;
     color: white;
@@ -802,26 +803,35 @@ hr {
     color: rgb(209, 16, 16);
     font-size: 30px;
     font-weight: 800;
+    width: 130px;
+    text-align: center;
 }
 #empresa2 h3, #nomeEmpresa2 {
     color: rgb(137, 14, 14);
     font-size: 30px;
     font-weight: 800;
+    width: 130px;
+    text-align: center;
 }
 #empresa3 h3, #nomeEmpresa3 {
     color: rgb(14, 40, 118);
     font-size: 30px;
     font-weight: 800;
+    width: 130px;
+    text-align: center;
 }
 
 #conteudoEmpresa {
     padding-left: 30px;
-    min-width: 600px;
+    min-width: 700px;
     font-size: 16px;
     line-height: 1.5;
 }
 #sobreEmpresa ul li {
     margin-top: 8px;
+}
+#sobreEmpresa ul li strong {
+    color: #003f72;
 }
 
 
@@ -829,7 +839,7 @@ hr {
 
 #areaCentralAtendimento {
     display: flex;
-    background-color: rgb(227, 234, 240);
+    background-color: rgb(214, 221, 228);
     flex-direction: column;
     align-items: center;
     padding: 50px;
@@ -879,7 +889,7 @@ input, textarea {
     border: solid 1px gray;
 }
 #divisaoMensagem {
-    grid-column: 1/-1;
+    grid-column: 1/3;
 }
 
 #botaoEnviar {
