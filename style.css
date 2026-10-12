@@ -115,11 +115,11 @@ hr {
 }
 #areaIconesPaginaPrincipal {
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
 }
 .iconePaginaPrincipal {
-    width: calc(5% + 50px);
+    width: 85px;
     margin-top: 20px;
     border-radius: calc(100%);
 }
@@ -186,12 +186,11 @@ hr {
     font-size: 16px;
     text-decoration: none;
     font-weight: 600;
-    width: 100%;
     height: 10px;
     border-radius: 30px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     padding: 30px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 #areaTiposDeAjudas article a:hover {
     background-color: rgb(20, 114, 173);
@@ -205,7 +204,6 @@ hr {
     background: linear-gradient(rgb(19, 79, 147), rgb(26, 102, 188));
     margin: 0 -30px 30px -30px;
     border-radius: 20px 20px 0 0;
-    width: calc(100% + 60px);
     height: 70px;
     padding: 15px;
 }
@@ -350,6 +348,10 @@ hr {
     background-color: rgb(20, 114, 173);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.2);
 }
+#botaoConsultarHorario {
+    width: 100%;
+    text-align: center;
+}
 
 #exemploLinha1, #exemploLinha2 {
     width: 100%;
@@ -491,99 +493,118 @@ hr {
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.2);
 }
 #areaTrajeto {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
     background-color: white;
     margin: 0 -40px -40px -40px;
+    padding: 30px 40px;
     border-radius: 8px;
-    max-height: 700px;
 }
 
 #divisaoTrajeto {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: rgb(243, 245, 247);
-    padding: 20px 20px 40px 20px;
+    padding: 30px;
     border-radius: 20px;
-    margin: 20px 0 30px 0;
-    width: 48%;
-    min-height: 450px;
-    max-height: 650px;
     box-shadow: 5px 7px 8px rgb(0,0,0,0.2);
 }
 #divisaoTrajeto2 {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    gap: 25px;
     background-color: rgb(243, 245, 247);
-    margin: 20px 0 30px 0;
     padding: 20px;
-    max-height: 650px;
-    min-height: 450px;
     border-radius: 20px;
-    width: 48%;
     box-shadow: 5px 7px 8px rgb(0,0,0,0.2);
 }
-#pontosNoMapa {
-    display: flex;
-    flex-direction: column;
-    margin: 24px;
-}
-#pontosNoMapa h3 {
-    font-size: 30px;
-    margin: 0 0 20px 0;
+#trajetoLinha, #pontosDeEmbarque {
+    font-size: 26px;
     font-weight: 700;
+    color: #052846;
+}
+#resumoTrajeto {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0 30px 0;
+}
+#resumoTrajeto p {
+    flex: 1;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #052846;
+    box-shadow: 2px 3px 4px rgb(0, 0, 0, 0.15);
+}
+#resumoTrajeto strong {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(11, 87, 160);
+    margin-bottom: 3px;
 }
 #pontosDeEmbarque {
-    font-size: 23px;
-}
-#pontosNoMapa strong {
-    font-size: 23px;
-}
-#pontosNoMapa p {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-#pontosNoMapa ol li {
-    margin-bottom: 20px;
-    list-style: none;
-}
-#imagemMapa {
-    width: 40%;
-    margin: 20px;
-    border-radius: 10px;
-}
-#trajetoLinha {
-    font-size: 34px;
-    font-weight: 700;
-    margin: 10px 0 20px 0;
-}
-#divisaoTrajeto p {
-    font-size: 20px;
-    text-align: center;
-}
-#pontos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 50px;
-}
-@media (max-width: 1250px) {
-    #pontos {
-        grid-template-columns: repeat(1, 1fr);
-    }
+    margin-bottom: 25px;
 }
 #pontos li {
-    background-color: rgb(40, 85, 138);
-    list-style: none;
-    color: white;
-    border-radius: 40px;
+    display: flex;
+    line-height: 20px;
+    margin-bottom: 14px;
     font-size: 18px;
+    font-weight: 600;
+    color: #052846;
+}
+#divisaoTrajeto .botaoBuscar {
+    margin-top: auto;
     text-align: center;
-    padding: 20px 30px;
-    min-width: 290px;
+    padding: 18px 30px;
+}
+#imagemMapa {
+    width: 48%;
+    height: auto;
+    align-self: center;
+    border-radius: 12px;
+}
+#pontosNoMapa {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#pontosNoMapa h3 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    color: #052846;
+}
+#pontosNoMapa ol li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+#pontosNoMapa strong {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(13, 53, 86);
+    color: white;
+    font-size: 15px;
+}
+@media (max-width: 1100px) {
+    #areaTrajeto {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -710,7 +731,7 @@ hr {
 #listaEmpresas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 30px;
+    padding: 20px;
     list-style-type: none;
     margin-top: 20px;
     gap: 20px;
@@ -718,19 +739,22 @@ hr {
 #listaEmpresas li {
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 3px 5px 6px rgb(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 6px rgb(0, 0, 0, 0.3);
 }
 #listaEmpresas p {
     margin: 10px 0;
 }
 .nomeCidade {
     font-weight: 700;
+    font-size: 17px;
+    color: rgb(9, 49, 110);
+    padding-top: 40px;
 }
-.botaoSaibaMais {
+#listaEmpresas .botaoSaibaMais {
     padding: 15px 60px;
     border-radius: 10px;
+    width: 100%;
     border: 0;
-    margin: 30px 0 0 0;
     font-weight: 700;
     font-size: 14px;
     color: white;
@@ -738,13 +762,13 @@ hr {
     cursor: pointer;
     box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.4);
 }
-.botaoSaibaMais:hover {
+#listaEmpresas .botaoSaibaMais:hover {
     background-color: #0d5fa3;
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.3);
 }
 #explicacaoSobreEmpresa {
     display: none;
-    align-items: center;    
+    align-items: center;
     gap: 40px;
     background-color: white;
     margin: 10px 30px;
@@ -753,8 +777,15 @@ hr {
     box-shadow: 3px 4px 7px rgb(0, 0, 0, 0.15);
     border-radius: 15px;
 }
+
+#areaBotaoFechar {
+    display: flex;
+    width: 47%;
+    justify-content: flex-end;
+}
 #botaoFecharResumo {
     padding: 13px 30px;
+    font-size: 15px;
     color: white;
     border: none;
     border-radius: 10px;
@@ -767,15 +798,25 @@ hr {
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
 }
 
-#nomeEmpresa {
-    color: rgb(227, 15, 15);
+#empresa1 h3, #nomeEmpresa1 {
+    color: rgb(209, 16, 16);
+    font-size: 30px;
+    font-weight: 800;
+}
+#empresa2 h3, #nomeEmpresa2 {
+    color: rgb(137, 14, 14);
+    font-size: 30px;
+    font-weight: 800;
+}
+#empresa3 h3, #nomeEmpresa3 {
+    color: rgb(14, 40, 118);
     font-size: 30px;
     font-weight: 800;
 }
 
 #conteudoEmpresa {
-    border-left: 2px solid rgb(193, 196, 210);
     padding-left: 30px;
+    min-width: 600px;
     font-size: 16px;
     line-height: 1.5;
 }

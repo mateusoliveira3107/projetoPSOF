@@ -12,7 +12,7 @@ const sobreEmpresa = document.getElementById('conteudoEmpresa');
 botaoEmpresa1.addEventListener("click", function() {
     explicacaoEmpresa.style.display = "flex";
 
-    nomeEmpresa.innerHTML = "<h3>Zaccaria</h3>";
+    nomeEmpresa.innerHTML = "<h3 id='nomeEmpresa1'>Zaccaria</h3>";
 
     sobreEmpresa.innerHTML = `<ul>
         <li><strong>Tipo de Transporte:</strong> Fretado exclusivo para funcionários.</li>
@@ -28,7 +28,7 @@ botaoEmpresa1.addEventListener("click", function() {
 botaoEmpresa2.addEventListener("click", function() {
     explicacaoEmpresa.style.display = "flex";
 
-    nomeEmpresa.innerHTML = "<h3>Unipac</h3>";
+    nomeEmpresa.innerHTML = "<h3 id='nomeEmpresa2'>Unipac</h3>";
 
     sobreEmpresa.innerHTML = `<ul>
         <li><strong>Tipo de Transporte:</strong> Fretado exclusivo para funcionários.</li>
@@ -44,7 +44,7 @@ botaoEmpresa2.addEventListener("click", function() {
 botaoEmpresa3.addEventListener("click", function() {
     explicacaoEmpresa.style.display = "flex";
 
-    nomeEmpresa.innerHTML = "<h3>Forvia</h3>";
+    nomeEmpresa.innerHTML = "<h3 id='nomeEmpresa3'>Forvia</h3>";
 
     sobreEmpresa.innerHTML = `<ul>
         <li><strong>Tipo de Transporte:</strong> Fretado exclusivo para funcionários.</li>
