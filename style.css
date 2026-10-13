@@ -76,7 +76,9 @@ header {
 }
 .ativo {
     background-color: rgb(0, 65, 130);
+    border-bottom: solid 3px rgb(0, 45, 99);
 }
+
 
 
 /* --- Parte Inicial do home ---*/
@@ -472,6 +474,7 @@ hr {
 }
 #secaoConsultarLinha article {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
 }
@@ -672,7 +675,7 @@ hr {
 }
 #segurancaBemEstar {
     color: rgb(11, 87, 160);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
     letter-spacing: 1px;
 }
@@ -838,8 +841,7 @@ hr {
 }
 #areaBotaoFechar {
     display: flex;
-    width: 47%;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 
 #botaoFecharResumo {
@@ -884,6 +886,9 @@ hr {
     font-size: 16px;
     line-height: 1.5;
 }
+#conteudoEmpresa ul {
+    list-style: none;
+}
 #sobreEmpresa ul li {
     margin-top: 8px;
 }
@@ -923,6 +928,7 @@ hr {
 #faleConosco {
     color: rgb(40, 78, 122);
     font-weight: 800;
+    font-size: 15px;
 }
 #centralAtendimentoTitulo {
     font-size: 36px;
@@ -1059,6 +1065,7 @@ footer p {
     }
     .barraNavegacaoPrincipal a {
         font-size: 12px;
+        margin: -5px 0;
     }
     #introducaoPaginaPrincipal {
         flex-direction: column;
@@ -1167,7 +1174,7 @@ footer p {
         font-size: 26px;
     }
     #subtituloPaginaHorarios, #subtituloPaginaLinhasRotas, #subtituloEmpresas, #subtituloDicas, #areaCentralAtendimento h3 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     #secaoConsultarLinha {
@@ -1180,8 +1187,16 @@ footer p {
     #nomeLinha {
         font-size: 22px;
     }
+    .barraNavegacaoPrincipal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
     #botaoBuscarLinha {
-        margin: 0 0 10px 0;
+        margin:110px 0 10px 0;
+    }
+    #botaoVerTodasLinhas {
+        margin-left: 0;
+        width: 100%;
     }
     #areaTodasLinhas {
         padding: 15px;
@@ -1231,15 +1246,18 @@ footer p {
     #areaDicas {
         padding: 15px;
     }
+
     #inputConsultarLinha {
         width: 100%;
-        margin: 10px 0 15px 0;
+        margin: 0;
     }
     #botaoBuscarLinha {
-        margin: 0 15px 0 0;
+        margin: 0 0 15px 0;
     }
+
+
     #areaTodasLinhas ul {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     #dicas1, #dicasExtras {
         grid-template-columns: 1fr;
@@ -1260,7 +1278,7 @@ footer p {
     #explicacaoSobreEmpresa {
         flex-direction: column;
         align-items: flex-start;
-        margin: 10px 0;
+        margin: 10px 20px;
         gap: 15px;
     }
     #conteudoEmpresa {
@@ -1413,6 +1431,9 @@ footer p {
     #areaTodasLinhas ul {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+    #botaoVerTodasLinhas {
+        margin: 10px 0 0 0;
+    }
 
 
     #dicas1, #dicasExtras {
@@ -1421,7 +1442,7 @@ footer p {
     #explicacaoSobreEmpresa {
         flex-direction: column;
         align-items: flex-start;
-        margin: 10px 0;
+        margin: 10px 20px;
         gap: 15px;
     }
     #conteudoEmpresa {
@@ -1430,7 +1451,6 @@ footer p {
     }
     #listaEmpresas {
         grid-template-columns: repeat(1, 1fr);
-        place-items: center;
     }
     #areaBotaoFechar {
         width: 100%;

@@ -19,20 +19,20 @@ const botaoVerTodos2 = document.getElementById('botaoVerTodos2');
 const horariosExtras2 = document.getElementById('horariosExtras2');
 
 botaoVerTodos1.addEventListener("click", function() {
-    if (botaoVerTodos1.textContent === "Ver todos") {
-        horariosExtras1.style.display = "grid"
-        botaoVerTodos1.textContent = "Ver menos";
-    } else {
-        horariosExtras1.style.display = "none";
+    if (horariosExtras1.style.display === "grid") {
+        horariosExtras1.style.display = "none"
         botaoVerTodos1.textContent = "Ver todos";
+    } else {
+        horariosExtras1.style.display = "grid";
+        botaoVerTodos1.textContent = "Ver menos";
     }
 })
 botaoVerTodos2.addEventListener("click", function() {
-    if (botaoVerTodos2.textContent === "Ver todos") {
-        horariosExtras2.style.display = "grid"
-        botaoVerTodos2.textContent = "Ver menos";
+    if (horariosExtras2.textContent === "grid") {
+        horariosExtras1.style.display = "none"
+        botaoVerTodos1.textContent = "Ver todos";
     } else {
-        horariosExtras2.style.display = "none";
-        botaoVerTodos2.textContent = "Ver todos";
+        horariosExtras1.style.display = "grid";
+        botaoVerTodos1.textContent = "Ver menos";
     }
 })
