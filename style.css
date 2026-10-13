@@ -65,13 +65,13 @@ header {
     font-weight: 600;
     font-size: 17px;
     border-radius: 12px;
-    padding: 11px 20px;
-    margin: -11px -20px;
+    padding: 10px 13px;
+    margin: -10px -13px;
     transition: transform 0.2s;
 }
 .barraNavegacaoPrincipal a:hover {
     color: #8acdff;
-    text-decoration: underline 2px;
+    text-decoration: underline 1.5px;
     transform: translateY(1.5px);
 }
 .ativo {
