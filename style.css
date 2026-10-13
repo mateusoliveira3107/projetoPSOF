@@ -11,7 +11,7 @@ main {
 
 /* --- Header --- */
 header {
-    background-color: rgb(27, 59, 93);
+    background: linear-gradient(to right, rgb(10, 44, 80),rgb(14, 53, 92),rgb(30, 66, 105),rgb(15, 55, 98));
     text-align: center;
     height: 140px;
     display: flex;
@@ -53,7 +53,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(0, 80, 146);
+    background: rgb(0, 80, 146);
     height: 50px;
     margin: -50px;
     margin-bottom: 50px;
@@ -64,10 +64,18 @@ header {
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
+    border-radius: 12px;
+    padding: 11px 20px;
+    margin: -11px -20px;
+    transition: transform 0.2s;
 }
 .barraNavegacaoPrincipal a:hover {
-    color: #9ad3ff;
+    color: #8acdff;
     text-decoration: underline 2px;
+    transform: translateY(1.5px);
+}
+.ativo {
+    background-color: rgb(0, 65, 130);
 }
 
 
@@ -156,11 +164,13 @@ hr {
     text-align: center;
     font-size: 34px;
     font-weight: 800;
+    color: #00132e;
 }
 #encontreOquePrecisa {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    color: #00132e
 }
 
 #areaTiposDeAjudas article {
@@ -173,6 +183,12 @@ hr {
     width: 30%;
     padding: 0 30px 30px 30px;
     border-radius: 20px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+#areaTiposDeAjudas article:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 8px 10px rgb(0, 0, 0, 0.2);
 }
 
 #areaTiposDeAjudas article a {
@@ -234,13 +250,14 @@ hr {
     border: none;
     border-radius: 10px;
     margin-top: 30px;
-    
+    transition: transform 0.2s;
     padding: 10px 25px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4)
 }
 #botaoConsultarLinhas:hover {
     background-color: rgb(2, 126, 202);
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(1.5px);
 }
 
 
@@ -259,13 +276,14 @@ hr {
     border: none;
     border-radius: 10px;
     margin-top: 30px;
-
+    transition: transform 0.2s;
     background-color: rgb(18, 53, 73);
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.4)
 }
 #botaoVerDicas:hover {
     background-color: rgb(19, 47, 64);
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(1.5px);
 }
 
 
@@ -280,16 +298,17 @@ hr {
     font-weight: 500;
 }
 #areaConsultaDeHorarios {
-    background-color: white;
+    background-color: rgb(239, 242, 248);
     box-shadow: 4px 6px 7px rgb(0, 0, 0, 0.2);
     padding: 60px 40px 40px 40px;
     margin: 30px 0 30px 0;
     border-radius: 10px;
-    border-left: solid 6px rgb(16, 63, 110);
+    border-left: solid 8px rgb(7, 83, 159);
 }
 #consultarHorario {
     font-size: 28px;
     margin: -20px 0 20px 0;
+    color: rgb(10, 37, 70);
 }
 #pontoEmbarque {
     font-size: 20px;
@@ -338,10 +357,12 @@ hr {
     font-size: 17px;
     font-weight: 700;
     cursor: pointer;
+    transition: transform 0.2s;
 }
 .botaoBuscar:hover {
     background-color: rgb(20, 114, 173);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.2);
+    transform: translateY(1.5px);
 }
 #botaoConsultarHorario {
     width: 100%;
@@ -422,10 +443,12 @@ hr {
     padding: 15px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     cursor: pointer;
+    transition: transform 0.2s;
 }
 #botaoVerTodos1:hover, #botaoVerTodos2:hover {
     background-color: rgb(20, 114, 173);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(0.8px);
 }
 
 
@@ -440,20 +463,25 @@ hr {
     font-weight: 500;
 }
 #secaoConsultarLinha {
-    background-color: white;
-    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
+    background-color: rgb(239, 242, 248);
+    box-shadow: 3px 6px 6px rgb(0, 0, 0, 0.2);
     padding: 40px;
     border-radius: 10px;
     margin: 30px 0 20px 0;
-    border-left: solid 6px rgb(16, 63, 110);
+    border-left: solid 8px rgb(7, 83, 159);
+}
+#secaoConsultarLinha article {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
 }
 #consultarLinha {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 20px;
+    color: rgb(10, 37, 70);
 }
 #inputConsultarLinha {      
-    margin: 10px 20px 0 0;
     width: 45%;
 }
 #descricaoRota {
@@ -495,7 +523,6 @@ hr {
 }
 #divisaoTrajeto2 {
     display: flex;
-    align-items: stretch;
     gap: 25px;
     background-color: rgb(243, 245, 247);
     padding: 20px;
@@ -570,7 +597,6 @@ hr {
     font-weight: 500;
 }
 #pontosNoMapa strong {
-    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -581,6 +607,57 @@ hr {
     color: white;
     font-size: 15px;
 }
+
+#areaTodasLinhas {
+    display: none;
+    background-color: rgb(223, 231, 239);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#areaTodasLinhas ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    gap: 20px;
+}
+
+#areaTodasLinhas li {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
+}
+#areaTodasLinhas h3 {
+    color: rgb(11, 87, 160);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+#areaTodasLinhas p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
+#botaoVerTodasLinhas {
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: white;
+    color: #015fac;
+    font-size: 17px;
+    font-weight: 700;
+    border: solid 2px rgb(1, 95, 172, 0.9);
+    box-shadow: 3px 5px 5px rgb(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#botaoVerTodasLinhas:hover {
+    background-color: rgb(230, 237, 243);
+    box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(1.5px);
+}
+
+
 @media (max-width: 1100px) {
     #areaTrajeto {
         grid-template-columns: 1fr;
@@ -640,11 +717,13 @@ hr {
     font-size: 18px;
     font-weight: 600;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    transition: transform 0.2s;
     cursor: pointer;
 }
 #botaoVerMais:hover {
     background-color: rgb(20, 114, 173);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(1.5px);
 }
 #dicas1, #dicasExtras {
     display: grid;
@@ -686,11 +765,13 @@ hr {
     font-size: 18px;
     font-weight: 600;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    transition: transform 0.2s;
     text-decoration: none;
 }
 #botaoSugestao:hover {
     background-color: rgb(16, 123, 189);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
+    transform: translateY(1.5px);
 }
 
 
@@ -751,7 +832,7 @@ hr {
     background-color: white;
     margin: 10px 30px;
     padding: 25px 30px;
-    border-left: 4px solid rgb(20, 114, 173);
+    border-left: 6px solid rgb(14, 106, 163);
     box-shadow: 3px 4px 7px rgb(0, 0, 0, 0.15);
     border-radius: 15px;
 }
@@ -1062,8 +1143,6 @@ footer p {
         width: 100%;
         padding: 15px;
     }
-
-
     #areaConsultaDeHorarios {
         padding: 30px 20px 25px 20px;
     }
@@ -1101,6 +1180,21 @@ footer p {
     #nomeLinha {
         font-size: 22px;
     }
+    #botaoBuscarLinha {
+        margin: 0 0 10px 0;
+    }
+    #areaTodasLinhas {
+        padding: 15px;
+    }
+    #areaTodasLinhas ul {
+        grid-template-columns: 1fr;
+    }
+    #areaTodasLinhas h3 {
+        font-size: 20px;
+    }
+    #areaTodasLinhas p {
+        font-size: 16px;
+    }
     #areaLinhasRotas {
         padding: 20px;
     }
@@ -1116,6 +1210,9 @@ footer p {
     }
     #divisaoTrajeto2 {
         flex-direction: column;
+    }
+    #areaTodasLinhas ul {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
     #imagemMapa {
         width: 100%;
@@ -1133,6 +1230,16 @@ footer p {
     }
     #areaDicas {
         padding: 15px;
+    }
+    #inputConsultarLinha {
+        width: 100%;
+        margin: 10px 0 15px 0;
+    }
+    #botaoBuscarLinha {
+        margin: 0 15px 0 0;
+    }
+    #areaTodasLinhas ul {
+        grid-template-columns: repeat(2, 1fr);
     }
     #dicas1, #dicasExtras {
         grid-template-columns: 1fr;
@@ -1302,6 +1409,9 @@ footer p {
         min-width: 48%;
         margin: 0;
         height: auto;
+    }
+    #areaTodasLinhas ul {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
 

@@ -25,7 +25,7 @@
         <nav class="barraNavegacaoPrincipal">
             <a href="index.html">Início</a>
             <a href="horarios.html">Horários</a>
-            <a href="linhas.html">Linhas e Rotas</a>
+            <a href="linhas.html" class="ativo">Linhas e Rotas</a>
             <a href="dicas.html">Dicas de Mobilidade</a>
             <a href="empresas.html">Empresas Parceiras</a>
             <a href="contato.html">Contato</a>
@@ -35,10 +35,13 @@
         <p id="subtituloPaginaLinhasRotas">Consulte as linhas disponíveis e encontre informações sobre trajetos e horários</p>
 
         <section id="secaoConsultarLinha">
-            <p id="consultarLinha">Consultar linha</p>
-            <p id="pontoEmbarque">Digite uma linha</p>   
-            <input type="text" placeholder="Ex: Linha 01" id="inputConsultarLinha">
-            <button id="botaoBuscarLinha" class="botaoBuscar">Buscar</button>
+                <p id="consultarLinha">Consultar linha</p>
+                <p id="pontoEmbarque">Digite uma linha</p>
+                <article>
+                    <input type="text" placeholder="Ex: Linha 01" id="inputConsultarLinha">
+                    <button id="botaoBuscarLinha" class="botaoBuscar">Buscar</button>
+                    <button class="fa-solid fa-list" id="botaoVerTodasLinhas">Ver todas as linhas</button>
+                </article>
         </section>
 
         <section id="areaLinhasRotas">
@@ -81,6 +84,57 @@
                     </div>
                 </div>
             </article>
+        </section>
+
+        <section id="areaTodasLinhas">
+            <ul>
+                <li>
+                    <article>
+                        <h3>Linha 01 - Distrito Industrial</h3>
+                        <p>Terminal Urbano Central → Distrito Industrial</p>
+                        <p>Tipo de linha: Regular</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <h3>Linha 02 - Centro Urbano</h3>
+                        <p>Distrito Industrial → Centro Urbano</p>
+                        <p>Tipo de linha: Regular</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <h3>Linha 03 - Zaccaria</h3>
+                        <p>Terminal Urbano Central → Zaccaria</p>
+                        <p>Tipo de linha: Fretado</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <h3>Linha 04 - Forvia</h3>
+                        <p>Terminal Urbano Central → Forvia</p>
+                        <p>Tipo de linha: Fretado</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Linha 05 - Unipac</h3>
+                        <p>Terminal Urbano Central → Unipac</p>
+                        <p>Tipo de linha: Fretado</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article>
+                        <h3>Linha 06 - Zona Sul</h3>
+                        <p>Terminal Urbano Central → Distrito Industrial Sul</p>
+                        <p>Tipo de linha: Regular</p>
+                    </article>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
