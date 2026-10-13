@@ -21,7 +21,7 @@ const horariosExtras2 = document.getElementById('horariosExtras2');
 botaoVerTodos1.addEventListener("click", function() {
     if (horariosExtras1.style.display === "grid") {
         horariosExtras1.style.display = "none"
-        botaoVerTodos1.textContent = "Ver todos";
+        botaoVerTodos1.textContent = "Ver todos os horários ⬇";
     } else {
         horariosExtras1.style.display = "grid";
         botaoVerTodos1.textContent = "Ver menos";
@@ -30,7 +30,7 @@ botaoVerTodos1.addEventListener("click", function() {
 botaoVerTodos2.addEventListener("click", function() {
     if (horariosExtras2.textContent === "grid") {
         horariosExtras1.style.display = "none"
-        botaoVerTodos1.textContent = "Ver todos";
+        botaoVerTodos1.textContent = "Ver todos os horários ⬇";
     } else {
         horariosExtras1.style.display = "grid";
         botaoVerTodos1.textContent = "Ver menos";

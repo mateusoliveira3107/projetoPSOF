@@ -318,7 +318,7 @@ hr {
 }
 #inputConsultaHorario {
     margin: 10px 20px 0 0;
-    width: 45%;
+    width: 75%;
 }
 #areaHorariosNoPonto h2 {
     font-size: 28px;
@@ -374,6 +374,7 @@ hr {
 #exemploLinha1, #exemploLinha2 {
     width: 100%;
     padding: 20px;
+    border: solid 3px #043f72;
     background-color: rgb(238, 242, 245);
     border-radius: 20px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.2);
@@ -442,6 +443,7 @@ hr {
     background-color: rgb(2, 126, 202);
     color: white;
     font-size: 16px;
+    font-weight: 600;
     padding: 15px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
     cursor: pointer;
@@ -485,7 +487,7 @@ hr {
     color: rgb(10, 37, 70);
 }
 #inputConsultarLinha {      
-    width: 45%;
+    width: 75%;
 }
 #descricaoRota {
     color: white;
@@ -609,11 +611,11 @@ hr {
     background-color: rgb(13, 53, 86);
     color: white;
     font-size: 15px;
+    flex-shrink: 0;
 }
 
 #areaTodasLinhas {
-    display: none;
-    background-color: rgb(223, 231, 239);
+    background-color: rgb(193, 207, 221);
     padding: 30px;
     border-radius: 15px;
     margin-top: 20px;
@@ -624,48 +626,64 @@ hr {
     list-style-type: none;
     gap: 20px;
 }
+#areaTodasLinhas ul li article strong {
+    background-color: #065ca6;
+    color: white;
+    margin: 0 20px 0 0;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 26px;
+    border-radius: 100%;
+}
 
-#areaTodasLinhas li {
-    background-color: white;
+#areaTodasLinhas ul li {
+    background-color: rgb(249, 249, 249);
     padding: 25px;
     border-radius: 15px;
     box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+#areaTodasLinhas ul li:hover {
+    background-color: white;
+    box-shadow: 3px 7px 10px rgb(0, 0, 0, 0.3);
+    transform: translateY(-2px);  
 }
 #areaTodasLinhas h3 {
     color: rgb(11, 87, 160);
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px rgba(0, 48, 106, 0.7);
 }
 #areaTodasLinhas p {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 5px;
 }
-#botaoVerTodasLinhas {
-    margin-left: auto;
-    border-radius: 10px;
-    padding: 10px 30px;
-    background-color: white;
-    color: #015fac;
-    font-size: 17px;
-    font-weight: 700;
-    border: solid 2px rgb(1, 95, 172, 0.9);
-    box-shadow: 3px 5px 5px rgb(0,0,0,0.3);
-    cursor: pointer;
-    transition: transform 0.2s;
+#areaBotaoFecharLinha {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -55px;
+    padding-bottom: 20px;
 }
-#botaoVerTodasLinhas:hover {
-    background-color: rgb(230, 237, 243);
+#botaoFecharResumoLinha {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: rgb(0, 139, 225);
+    border: none;
+    color: white;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+#botaoFecharResumoLinha:hover {
+    background-color: rgb(20, 114, 173);
     box-shadow: 1px 2px 2px rgb(0, 0, 0, 0.4);
     transform: translateY(1.5px);
 }
 
-
-@media (max-width: 1100px) {
-    #areaTrajeto {
-        grid-template-columns: 1fr;
-    }
-}
 
 
 /* --- Dicas de mobilidade --- */
@@ -1194,10 +1212,6 @@ footer p {
     #botaoBuscarLinha {
         margin:110px 0 10px 0;
     }
-    #botaoVerTodasLinhas {
-        margin-left: 0;
-        width: 100%;
-    }
     #areaTodasLinhas {
         padding: 15px;
     }
@@ -1216,6 +1230,7 @@ footer p {
     #areaTrajeto {
         margin: 0 -20px -20px -20px;
         padding: 20px;
+        gap: 20px;
     }
     #divisaoTrajeto {
         padding: 20px;
@@ -1225,9 +1240,6 @@ footer p {
     }
     #divisaoTrajeto2 {
         flex-direction: column;
-    }
-    #areaTodasLinhas ul {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
     #imagemMapa {
         width: 100%;
@@ -1246,18 +1258,34 @@ footer p {
     #areaDicas {
         padding: 15px;
     }
-
-    #inputConsultarLinha {
-        width: 100%;
-        margin: 0;
-    }
     #botaoBuscarLinha {
         margin: 0 0 15px 0;
     }
-
-
-    #areaTodasLinhas ul {
-        grid-template-columns: repeat(1, 1fr);
+    #descricaoRota {
+        padding-bottom: 20px;
+    }
+    #areaBotaoFecharLinha {
+        justify-content: flex-start;
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+    #botaoFecharResumoLinha {
+        width: 100%;
+        padding: 14px 20px;
+    }
+    #trajetoLinha, #pontosDeEmbarque {
+        font-size: 22px;
+    }
+    #pontosNoMapa h3 {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+        text-align: center;
+    }
+    #pontosNoMapa ol {
+        padding-left: 0;
+    }
+    #pontosNoMapa ol li {
+        font-size: 15px;
     }
     #dicas1, #dicasExtras {
         grid-template-columns: 1fr;
@@ -1431,11 +1459,28 @@ footer p {
     #areaTodasLinhas ul {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-    #botaoVerTodasLinhas {
-        margin: 10px 0 0 0;
+    #inputConsultarLinha {
+        width: 100%;
     }
-
-
+    #botaoBuscarLinha {
+        width: 100%;
+    }
+    #areaTrajeto {
+        grid-template-columns: 1fr;
+    }
+    #divisaoTrajeto2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #imagemMapa {
+        width: 70%;
+    }
+    #pontosNoMapa {
+        width: 100%;
+    }
+    #resumoTrajeto {
+        flex-wrap: wrap;
+    }
     #dicas1, #dicasExtras {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1464,7 +1509,6 @@ footer p {
     #botaoEnviar {
         margin: 20px 0;
     }
-
 
 
     /* --- Footer --- */

@@ -36,11 +36,19 @@
 
         <section id="secaoConsultarLinha">
                 <p id="consultarLinha">Consultar linha</p>
-                <p id="pontoEmbarque">Digite uma linha</p>
+                <p id="pontoEmbarque">Informe uma linha</p>
                 <article>
-                    <input type="text" placeholder="Ex: Linha 01" id="inputConsultarLinha">
+                    <input list="linha" type="text" placeholder="Ex: Linha 01" id="inputConsultarLinha">
                     <button id="botaoBuscarLinha" class="botaoBuscar">Buscar</button>
-                    <button class="fa-solid fa-list" id="botaoVerTodasLinhas">Ver todas as linhas</button>
+
+                    <datalist id="linha">
+                        <option value="Linha 01">
+                        <option value="Linha 02">
+                        <option value="Linha 03">
+                        <option value="Linha 04">
+                        <option value="Linha 05">
+                        <option value="Linha 06">
+                    </datalist>
                 </article>
         </section>
 
@@ -48,6 +56,9 @@
             <article id="descricaoRota">
                 <p>Detalhes da Rota</p>
                 <h2 id="nomeLinha"></h2>
+                <article id="areaBotaoFecharLinha">
+                    <button id="botaoFecharResumoLinha">Fechar resumo</button>
+                </article>
             </article>
 
             <article id="areaTrajeto">

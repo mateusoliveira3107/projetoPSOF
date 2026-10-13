@@ -2,9 +2,9 @@ const botaoBuscarLinha = document.getElementById('botaoBuscarLinha');
 const inputLinha = document.getElementById('inputConsultarLinha');
 
 const areaDetalhesLinha = document.getElementById('areaLinhasRotas');
-
-const botaoVerTodasLinhas = document.getElementById('botaoVerTodasLinhas');
 const areaTodasLinhas = document.getElementById('areaTodasLinhas');
+
+const botaoFecharResumoLinha = document.getElementById('botaoFecharResumoLinha');
 
 const nomeLinha = document.getElementById('nomeLinha');
 
@@ -19,7 +19,7 @@ botaoBuscarLinha.addEventListener("click", function() {
     nomeLinha.textContent = `${inputLinha.value} - Distrito Industrial`
 });
 
-botaoVerTodasLinhas.addEventListener("click", function() {
-    areaTodasLinhas.style.display = "block";
-    areaDetalhesLinha.style.display = "none"
+botaoFecharResumoLinha.addEventListener("click", function() {
+    areaDetalhesLinha.style.display = "none";
+    areaTodasLinhas.style.display = "block"
 });
