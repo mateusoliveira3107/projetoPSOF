@@ -28,11 +28,11 @@ botaoVerTodos1.addEventListener("click", function() {
     }
 })
 botaoVerTodos2.addEventListener("click", function() {
-    if (horariosExtras2.textContent === "grid") {
-        horariosExtras1.style.display = "none"
-        botaoVerTodos1.textContent = "Ver todos os horários ⬇";
+    if (horariosExtras2.style.display === "grid") {
+        horariosExtras2.style.display = "none"
+        botaoVerTodos2.textContent = "Ver todos os horários ⬇";
     } else {
-        horariosExtras1.style.display = "grid";
-        botaoVerTodos1.textContent = "Ver menos";
+        horariosExtras2.style.display = "grid";
+        botaoVerTodos2.textContent = "Ver menos";
     }
 })
