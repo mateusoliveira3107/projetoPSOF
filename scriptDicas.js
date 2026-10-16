@@ -8,5 +8,5 @@ botaoVerMais.addEventListener("click", function() {
     } else {
         areaDicasExtras.style.display = "none";
         botaoVerMais.textContent = "Ver mais";
-    }
-})
+    };
+});
