@@ -24,7 +24,7 @@ botaoVerTodos1.addEventListener("click", function() {
         botaoVerTodos1.textContent = "Ver todos os horários ⬇";
     } else {
         horariosExtras1.style.display = "grid";
-        botaoVerTodos1.textContent = "Ver menos";
+        botaoVerTodos1.textContent = "Ver menos ⬆";
     }
 })
 botaoVerTodos2.addEventListener("click", function() {
@@ -33,6 +33,6 @@ botaoVerTodos2.addEventListener("click", function() {
         botaoVerTodos2.textContent = "Ver todos os horários ⬇";
     } else {
         horariosExtras2.style.display = "grid";
-        botaoVerTodos2.textContent = "Ver menos";
+        botaoVerTodos2.textContent = "Ver menos ⬆";
     }
 })
