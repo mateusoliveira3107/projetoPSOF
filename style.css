@@ -599,7 +599,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -1278,6 +1278,9 @@ footer p {
         padding-top: 0;
         align-items: flex-start;
     }
+    #pontosNoMapa ol li {
+        margin-bottom: 20px;
+    }
     #pontosNoMapa h3 {
         margin: 0 0 20px 0;
     }
@@ -1462,6 +1465,9 @@ footer p {
     }
     #areaTodasLinhas ul {
         grid-template-columns: 1fr 1fr;
+    }
+    #pontosNoMapa ol li {
+        margin-bottom: 30px;
     }
     #inputConsultarLinha, #inputConsultaHorario {
         width: 100%;
