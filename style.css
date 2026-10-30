@@ -1059,7 +1059,7 @@ input, textarea {
 }
 
 
-/* --- footer --- */
+/* --- footer/rodapé --- */
 
 footer {
     display: flex;
@@ -1070,10 +1070,10 @@ footer {
 #divisaoUmFooter {
     display: flex;
     align-items: center;
-    margin-left: -30px;
+    margin-left: -40px;
     border-radius: 60px;
     background-color: rgb(24, 91, 122);
-    padding: 30px;
+    padding: 30px 30px 30px 40px;
 }
 #divisaoDoisFooter {
     display: flex;
@@ -1261,7 +1261,7 @@ footer p {
         grid-template-columns: 1fr;
         padding: 20px;
         gap: 20px;
-    }
+    }   
     #divisaoTrajeto {
         padding: 20px;
     }
