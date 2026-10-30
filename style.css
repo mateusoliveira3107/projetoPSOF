@@ -1490,7 +1490,9 @@ footer p {
         width: 100%;
     }
     #dicas1, #dicasExtras {
-        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        justify-self: center;
+        grid-template-columns: 1fr;
     }
     #explicacaoSobreEmpresa {
         flex-direction: column;
